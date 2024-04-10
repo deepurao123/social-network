@@ -1,0 +1,52 @@
+.w-40px {
+    width: 40px;
+}
+
+.bi-eye-slash-fill {
+    font-size: 16px;
+    color: black;
+}
+
+.nav-pills-soft .nav-link.active {
+    background-color: rgba(var(--bs-primary-rgb), 0.1) !important;
+    border: 1px solid transparent !important;
+}
+
+.lh-1 {
+    line-height: 1 !important;
+}
+
+.btn-dashed {
+    background: linear-gradient(90deg, var(--bs-border-color) 50%, transparent 50%), linear-gradient(0deg, var(--bs-border-color) 50%, transparent 50%), linear-gradient(90deg, var(--bs-border-color) 50%, transparent 50%), linear-gradient(0deg, var(--bs-border-color) 50%, transparent 50%) !important;
+    background-repeat: repeat-x, repeat-y, repeat-x, repeat-y !important;
+    background-size: 10px 2px, 2px 10px, 10px 2px, 2px 10px !important;
+    background-position: left top, right top, left bottom, left top !important;
+}
+
+.form-check-input {
+    --bs-form-check-bg: var(--bs-gray-200);
+    width: 1em;
+    height: 1em;
+    margin-top: 0.25em;
+    vertical-align: top;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-form-check-bg);
+    background-image: var(--bs-form-check-bg-image);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid rgba(0, 0, 0, 0.491) !important;
+}
+
+.btn-success-soft {
+    color: #0cbc87 !important;
+    background-color: rgba(12, 188, 135, 0.1) !important;
+    transition: all 0.5s ease;
+}
+
+.btn-success-soft:hover {
+    color: #ffffff !important;
+    background-color: #0cbc87 !important;
+}

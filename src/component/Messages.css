@@ -1,0 +1,139 @@
+.icon-md {
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 0.9em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-scrollbar {
+    top: 0;
+    right: 0;
+    overflow-y: auto;
+    /* scrollbar-width: thin; */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #aeaeaed0;
+}
+
+@media (min-width: 992px) {
+    .card-chat {
+        height: calc(100vh - 5.1125rem - 1.5rem);
+    }
+}
+
+@media (min-width: 992px) {
+    .chat-conversation-content {
+        height: calc(100% - 5.25rem) !important;
+    }
+
+}
+
+.h-200px {
+    height: 200px !important;
+}
+
+.position-fixed {
+    position: fixed !important;
+}
+
+.status-online:before {
+    background-color: #0cbc87;
+}
+
+.status-offline:before {
+    background-color: #d6293e;
+}
+
+[class*=status-]:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    height: 12px;
+    width: 12px;
+    right: -2px;
+    top: -2px;
+}
+
+.avatar-story {
+    position: relative;
+    /* padding: 4px; */
+    z-index: 1;
+
+}
+
+.avatar-story:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid var(--bs-primary) !important;
+    z-index: -1;
+}
+
+.avatar-group-two {
+
+    display: inline-flex;
+    padding: 0;
+}
+
+.avatar-group .avatar-img {
+    border: 2px solid #fff;
+}
+
+.avatar-group-three {
+    display: inline-flex;
+    padding: 0;
+    padding-right: 1.2rem;
+    position: relative;
+}
+
+.avatar-group-four {
+    display: inline-grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto auto;
+    gap: 0px 0px;
+}
+
+.typing .dot:nth-child(1) {
+    animation-delay: 200ms !important;
+}
+
+.typing .dot {
+    animation: TypingAnimation 1.8s infinite ease-in-out !important;
+    background-color: rgba(var(--bs-secondary-rgb), 0.8);
+    border-radius: 50%;
+    height: 7px;
+    margin-right: 4px;
+    vertical-align: middle;
+    width: 7px;
+    display: inline-block;
+}
+
+@keyframes TypingAnimation {
+    0% {
+        transform: translateY(0px);
+        background-color: rgba(var(--bs-secondary-rgb), 0.7);
+    }
+
+    28% {
+        transform: translateY(-7px);
+        background-color: rgba(var(--bs-secondary-rgb), 0.4);
+    }
+
+    44% {
+        transform: translateY(0px);
+        background-color: rgba(var(--bs-secondary-rgb), 0.2);
+    }
+}

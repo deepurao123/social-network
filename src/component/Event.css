@@ -1,0 +1,17 @@
+.avtar {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.avt {
+    width: 2.5rem;
+    object-fit: cover;
+}
+
+.bg-light-gray {
+    background-color: var(--bs-gray-300) !important;
+}
+
+.bg-light-gray:hover {
+    background-color: none;
+}

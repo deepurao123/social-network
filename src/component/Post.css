@@ -1,0 +1,355 @@
+:root,
+[data-bs-theme=light] {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+}
+
+.avatar-story {
+    position: relative;
+    padding: 4px;
+    height: 50px;
+    width: 50px
+}
+
+.avatar-story:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.avatar {
+    height: 3rem;
+    width: 3rem;
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0 !important;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
+}
+
+.avatar3 {
+    display: contents;
+}
+
+.avatar1 {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.content:before {
+    content: "•";
+    color: inherit;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    opacity: 0.8;
+}
+
+h6 a {
+    text-decoration: none;
+    color: rgb(31, 31, 31);
+
+}
+
+.post {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.w-217 {
+    width: 217px !important;
+}
+
+.post1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flip-horizontal {
+    transform: scaleX(-1);
+    display: inline-block !important;
+    /* }
+
+.avtar2 {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.avt {
+    width: 3.5rem;
+    object-fit: cover; */
+}
+
+.spinner-dots {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.spinner-dot {
+    background-color: var(--bs-gray-600);
+    display: inline-block;
+    height: 4px;
+    margin: 2px;
+    border-radius: 50%;
+    width: 4px;
+}
+
+.btn-link-loader.active .spinner-dots .spinner-dot {
+    animation: dot ease-in-out 1s infinite !important;
+}
+
+.btn-primary-soft {
+    color: #0f6fec !important;
+    background-color: rgba(15, 111, 236, 0.1) !important;
+}
+
+.btn-primary-soft:hover {
+    color: #ffffff !important;
+    background-color: #0f6fec !important;
+    transition: all 0.5s linear;
+}
+
+.text-secondary {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+}
+
+.btn-secondary-soft-hover:hover:hover {
+    color: #14191e !important;
+    background-color: rgba(20, 25, 30, 0.1);
+}
+
+.nav.nav-divider .nav-item+.nav-item:before {
+    content: "•";
+    color: inherit;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    opacity: 0.8;
+
+}
+
+.nav.nav-divider .nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.z-index-9 {
+    z-index: 9 !important;
+}
+
+.icon-xs {
+    height: 1.5rem;
+    width: 1.5rem;
+    font-size: 0.6em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-pills.nav-pills-light .nav-link.active {
+    background-color: var(--bs-gray-300) !important;
+}
+
+.nav .nav-item .nav-link.active {
+    color: var(--bs-primary);
+}
+
+h6 a:hover {
+    color: #0d6efd;
+}
+
+.owl-prev {
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    background-color: rgb(213, 210, 210) !important;
+}
+
+.owl-next {
+    position: absolute;
+    top: 35%;
+    right: 0%;
+    background-color: rgb(213, 210, 210) !important;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+    background-color: #2874f0 !important;
+    color: #fff;
+}
+
+.owl-prev span {
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.owl-next span {
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.owl-item {
+    margin-right: 0;
+
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    position: absolute;
+    top: 35%;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    width: 2%;
+    height: 34%;
+    padding: 0px;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+    background-color: #0021c4;
+}
+
+.owl-theme .owl-dots {
+    display: none;
+
+    /* }
+
+.owl-carousel .owl-item img {
+    width: 50%;
+    position: absolute;
+    top: 41%;
+    left: 25%; */
+    /* }
+
+.owl-stage-outer {
+    height: 17rem; */
+}
+
+.progress {
+    height: 32px !important;
+}
+
+.w-15 {
+    width: 15%;
+}
+
+.w-10 {
+    width: 10%;
+}
+
+.w-55 {
+    width: 55%;
+}
+
+.webtica {
+    max-width: 100%;
+    height: auto;
+}
+
+.owl-carousel .owl-nav.disabled,
+.owl-carousel .owl-dots.disabled {
+    display: block !important;
+}
+
+.owl-theme .owl-nav {
+    margin-top: 10px;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.item-preview-owl {
+    border-radius: 5px;
+    height: 150px !important;
+    object-fit: cover;
+    /* width: auto !important;
+    padding: 0 !important; */
+    position: relative;
+    width: 140px;
+}
+
+.item-preview-owl:before {
+    content: "";
+    position: absolute;
+    height: 140px;
+    width: 100%;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(180deg, transparent, black);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.btn-loader {
+    position: relative;
+    text-align: center;
+}
+
+.btn-primary-soft {
+    color: #0f6fec;
+    background-color: rgba(15, 111, 236, 0.556);
+}
+
+.btn-loader.active .load-icon {
+    display: block;
+}
+
+.btn-loader .load-icon {
+    display: none;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
